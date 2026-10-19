@@ -54,7 +54,7 @@
 &kp TAB            &kp Q       &kp W           &kp E           &kp R        &kp T                                          &kp Y           &kp U           &kp I           &kp O           &kp P               &kp BSPC
 &kp LSHIFT         &kp A       &kp S           &kp D           &kp F        &kp G                                          &kp H           &kp J           &kp K           &kp L           &kp SINGLE_QUOTE    &kp ENTER
 &kp LCTRL          &kp Z       &kp X           &kp C           &kp V        &kp B        &kp C_MUTE     &kp C_PLAY_PAUSE   &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH    &kp DEL
-                            &kp LALT      &tog DEL      &kp LGUI        &kp SPACE        &mo LOWER      &mo RAISE          &kp SPACE       &kp RGUI       &kp LBKT        &kp ESC >;
+                            &kp LALT      &kp DEL      &kp LGUI        &kp SPACE        &mo LOWER      &mo RAISE          &kp SPACE       &kp RGUI       &kp LBKT        &kp ESC >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
@@ -89,7 +89,7 @@
 //    ┌───────────────┬────────┬──────────┬──────────┬───────────┬───────────────┐                            ┌───────────────┬───────────┬───────────┬──────────┬──────────┬───────────┐
 //    │   (trans)     │        │          │          │           │               │                            │               │           │           │          │          │    DEL    │
 //    ├───────────────┼────────┼──────────┼──────────┼───────────┼───────────────┤                            ├───────────────┼───────────┼───────────┼──────────┼──────────┼───────────┤
-//    │   (trans)     │        │          │          │           │               │                            │               │ ZOOM OUT  │    Up     │ ZOOM IN  │          │     |     │
+//    │   (trans)     │  rgb   │          │          │           │               │                            │               │ ZOOM OUT  │    Up     │ ZOOM IN  │          │     |     │
 //    ├───────────────┼────────┼──────────┼──────────┼───────────┼───────────────┤                            ├───────────────┼───────────┼───────────┼──────────┼──────────┼───────────┤
 //    │   (trans)     │        │          │          │           │               │                            │               │   Left    │   Down    │  Right   │          │    `~     │
 //    ├───────────────┼────────┼──────────┼──────────┼───────────┼───────────────┼──────────────┬─────────────┼───────────────┼───────────┼───────────┼──────────┼──────────┼───────────┤
@@ -100,7 +100,7 @@
 
             bindings = <
 &trans     &none        &none        &none        &none        &none                    &none     &none                 &none       &none               &none       &kp DEL 
-&trans     &none        &none        &none        &none        &none                    &none     &kp C_AC_ZOOM_OUT     &kp UP      &kp C_AC_ZOOM_IN    &none       &kp PIPE
+&trans     &rgb_ug RGB_TOG        &rgb_ug RGB_EFF       &rgb_ug RGB_BRI        &rgb_ug RGB_BRD        &none                    &none     &kp C_AC_ZOOM_OUT     &kp UP      &kp C_AC_ZOOM_IN    &none       &kp PIPE
 &trans     &none        &none        &none        &none        &none                    &none     &kp LEFT              &kp DOWN    &kp RIGHT           &none       &kp GRAVE
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &none   &trans   &trans  &none     &none                 &none       &none               &kp BSLH    &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans                &trans      &trans >;
